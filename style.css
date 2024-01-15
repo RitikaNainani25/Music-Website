@@ -20,11 +20,19 @@ body {
 
 header {
     background-color: var(--color2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +45,18 @@ header {
     font-weight: 600;
 }
 
+button {
+    padding: 10px 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
 ul {
     list-style: none;
 }
@@ -46,15 +66,171 @@ a {
     color: white;
 }
 
-.container ul {
+nav ul {
     display: flex;
     gap: 30px;
 }
 
-.container ul li {
+nav ul li {
     border-bottom: 2px solid transparent;
 }
 
-.container ul li:hover {
+nav ul li:hover {
     border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.hero-section {
+    background-image: url("images/hero1_img.jpg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    color: white;
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+} 
+
+.hero-section h1 {
+    font-size: 95px;
+}
+
+.hero-section h3 {
+    font-size: 30px;
+    margin-bottom:15px ;
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.music-section {
+    padding-top: 50px;
+    background-color: var(--color1);
+}
+
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 30px;
+}
+
+.music-section h4 {
+    line-height: 30px;
+    text-align: center;
+}
+.iphone-ipad-img {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.btn-one {
+    background-color: var(--color4);
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.btn-two {
+    background-color: var(--color2);
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.about-section .container {
+    padding-top: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.about-section h3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.about-section p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    left: 0;
+    filter: blur(10px);
+    z-index: -1;
+    height: 755px;
+}
+
+.video-section .text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    color: white;
+    gap: 30px;
+}
+
+.video-section h3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.video-section p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.hero-section, .video-section {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gift-section .container{
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.gift-section .gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gift-section h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.gift-section p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
 }
