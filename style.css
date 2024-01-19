@@ -12,10 +12,20 @@
     box-sizing: border-box;
 }
 
-html,
+html {
+    font-size: 60.5%;
+}
+
 body {
     font-family: sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    font-size: 1.8rem;
+}
+
+section {
+    scroll-margin: 50px;
 }
 
 header {
@@ -27,10 +37,10 @@ header {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0px 20px;
 }
-
 
 nav {
     display: flex;
@@ -87,7 +97,7 @@ nav ul li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;  
+    text-align: center;
     color: white;
 }
 
@@ -95,15 +105,15 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 30px;
-} 
+}
 
 .hero-section h1 {
-    font-size: 95px;
+    font-size: 9.5rem;
 }
 
 .hero-section h3 {
-    font-size: 30px;
-    margin-bottom:15px ;
+    font-size: 3.2rem;
+    margin-bottom: 15px;
 }
 
 .hero-section p {
@@ -130,6 +140,7 @@ nav ul li:hover {
     line-height: 30px;
     text-align: center;
 }
+
 .iphone-ipad-img {
     position: relative;
     top: 400px;
@@ -179,13 +190,15 @@ nav ul li:hover {
     left: 0;
     filter: blur(10px);
     z-index: -1;
-    height: 755px;
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .video-section .text {
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 260px;
     padding-left: 80px;
     padding-right: 80px;
     text-align: center;
@@ -194,25 +207,26 @@ nav ul li:hover {
 }
 
 .video-section h3 {
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 30px;
 }
 
 .video-section p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 30px;
 }
 
-.hero-section, .video-section {
+.hero-section,
+.video-section {
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.gift-section .container{
-    margin-top: 450px;
+.gift-section .container {
+    margin-top: 410px;
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -233,6 +247,10 @@ nav ul li:hover {
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
+}
+
+.gift-section {
+    scroll-margin: 100px;
 }
 
 .upper-footer {
@@ -272,4 +290,122 @@ nav ul li:hover {
     color: white;
     font-size: 20px;
     font-weight: 600;
+}
+
+/* .menu-bar  {
+    display: none;
+} */
+
+@media (max-width: 1024px) {
+    .iphone-ipad-img {
+        margin-top: -30.0rem;
+        top: 30.0rem;
+    }
+
+    .iphone-ipad-img img,
+    .mac-img img {
+        max-width: 100%;
+    }
+
+    .about-section .container {
+        padding-top: 35.0rem;
+    }
+
+    .gift-card img {
+        width: 40rem;
+    }
+
+    .gift-section .container {
+        margin-top: 290px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 45%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-bar i {
+        font-size: 2.5rem;
+    }
+
+    .upper-footer .container {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .upper-footer .footer-links {
+        min-width: 15rem;
+    }
+
+    .iphone-ipad-img {
+        margin-top: -20rem;
+        top: 20rem;
+    }
+
+    .about-section .container {
+        padding-top: 30rem;
+    }
+
+    .gift-section .container {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+
+    .gift-section img {
+        width: 80%;
+    }
+
+    .video-section .text {
+        padding-top: 150px;
+    }
+
+    .video-section h3 {
+        font-size: 22px;
+    }
+
+    .video-section p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:769px) and (max-width: 1024px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .iphone-ipad-img {
+        margin-top: -10rem;
+        top: 10rem;
+    }
+
+    .about-section .container {
+        padding-top: 15rem;
+    }
+
+    .video-section .text {
+        padding-top: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .video-section h3 {
+        font-size: 20px;
+    }
+
+    .video-section p {
+        font-size: 15px;
+    }
 }
