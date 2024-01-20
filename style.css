@@ -292,10 +292,6 @@ nav ul li:hover {
     font-weight: 600;
 }
 
-/* .menu-bar  {
-    display: none;
-} */
-
 @media (max-width: 1024px) {
     .iphone-ipad-img {
         margin-top: -30.0rem;
@@ -339,7 +335,7 @@ nav ul li:hover {
     }
 
     .upper-footer .footer-links {
-        min-width: 15rem;
+        min-width: 20rem;
     }
 
     .iphone-ipad-img {
@@ -407,5 +403,14 @@ nav ul li:hover {
 
     .video-section p {
         font-size: 15px;
+    }
+
+    .upper-footer .container {
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    .upper-footer .footer-links {
+        min-width: 25rem;
     }
 }
